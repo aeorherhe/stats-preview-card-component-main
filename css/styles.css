@@ -1,0 +1,154 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  font-family: "inter", "lexend deca", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.images {
+  background-color: hsl(277, 86%, 50%);
+  margin-bottom: 35px;
+  border-radius: 15px 15px 0 0;
+}
+
+.mobile-img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.first-paragraph {
+  line-height: 1.5;
+  padding: 20px 25px;
+}
+
+.highlighted-text {
+  color: hsl(277, 64%, 61%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 0%;
+  text-align: center;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "lexend deca";
+  margin: 5px;
+  text-align: center;
+}
+
+.all-stats {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.all-stats p {
+  text-transform: uppercase;
+}
+
+.attribution {
+  background-color: hsl(277, 84%, 27%);
+  border-radius: 15px;
+  color: hsl(223, 20%, 93%);
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  .container {
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    justify-content: space-evenly;
+    width: fit-content;
+  }
+
+  .images {
+    height: 100%;
+    margin: 0%;
+  }
+
+  .images,
+  .desktop-img {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .desktop-img {
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.5;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  h1,
+  p {
+    text-align: start;
+  }
+
+  .text-section {
+    padding: 0 40px;
+  }
+
+  .first-paragraph {
+    padding-left: 0%;
+  }
+
+  .all-stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .attribution {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    height: 60%;
+  }
+}
